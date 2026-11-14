@@ -56,6 +56,16 @@ input[type=email]{width:100%;min-height:56px;border:1.5px solid #cfc4bb;border-r
 .part .p1{font-size:12px;letter-spacing:.06em;font-weight:700;color:var(--mute)}
 .part a.btn{min-height:50px;font-size:16px}
 footer{padding-block:22px 30px;font-size:13px;color:var(--mute);border-top:1px solid var(--line);margin-top:24px}
+.more{display:grid;gap:0;margin-top:26px;border-top:3px solid var(--fg)}
+.more .ht{font-size:13px;font-weight:800;letter-spacing:.06em;padding-block:14px 4px}
+.it{padding-block:16px;border-bottom:1px solid var(--line);display:grid;gap:8px}
+.it .rb{font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--red)}
+.it h3{font-size:1.2rem;line-height:1.25;letter-spacing:-.01em}
+.it p{font-size:16.5px;line-height:1.55}
+.it .bl{filter:blur(5px);user-select:none;transition:filter .3s}
+.it .src{font-size:13px;color:var(--mute)}.it .src a{color:inherit}
+.more.open .bl{filter:none;user-select:auto}
+.it .src{display:none}.more.open .it .src{display:block}
 </style>
 </head>
 <body>
@@ -101,9 +111,17 @@ footer{padding-block:22px 30px;font-size:13px;color:var(--mute);border-top:1px s
         </form>
         <p class="meta">Gratuit. 1 email chaque matin. Désinscription en 1 clic.</p>
       </div>
-      <div id="sp"></div>
+      <div id="sp" style="height:20px"></div>
     </div>
   </article>
+<section class="more" id="more" aria-label="Aussi ce matin">
+  <p class="ht">AUSSI DANS L'ÉDITION DE CE MATIN</p>
+  <div class="it"><span class="rb">NVIDIA</span><h3>Résultats mardi : le géant de l'IA sous pression</h3><p>Nvidia publie ses comptes le mardi 17 novembre. Les analystes attendent environ 109 milliards de dollars de chiffre d'affaires.</p><p class="bl" aria-hidden="true">Et le dossier est chargé : le conseil d'administration enquête sur des accusations visant son patron, Jensen Huang. Nvidia assure qu'il reste aux commandes. C'est la publication la plus attendue du trimestre, après le krach de l'IA du 5 novembre.</p><p class="src">Sources : <a href="https://www.cmcmarkets.com/en-ie/news-and-analysis/the-week-ahead-fed-minutes-japan-cpi-nvidia-earnings">CMC Markets</a> · <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a> · <a href="https://www.ibtimes.com/nvidia-jensen-huang-succession-plan-investigation-3809602">IBTimes</a></p></div>
+  <div class="it"><span class="rb">TAUX</span><h3>La Fed pourrait remonter ses taux en décembre</h3><p>L'inflation américaine d'octobre est sortie plus forte que prévu. Les marchés parient désormais sur une hausse des taux de la Fed les 8 et 9 décembre.</p><p class="bl" aria-hidden="true">Le taux d'emprunt de l'État américain à 10 ans dépasse 5 %. Des taux plus hauts, c'est un crédit plus cher et, en général, des actions sous pression.</p><p class="src">Sources : <a href="https://www.fxstreet.com/analysis/week-ahead-fed-minutes-inflation-data-and-nvidia-earnings-to-guide-investors-202611131033">FXStreet</a> · <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a></p></div>
+  <div class="it"><span class="rb">PARIS</span><h3>Le CAC 40 efface le krach : +2,8 % sur la semaine</h3><p>Après la chute du 5 novembre, la Bourse de Paris a enchaîné 5 séances sans baisse et finit la semaine à 8 369 points.</p><p class="bl" aria-hidden="true">Vendredi, l'indice a fini quasiment stable, freiné par la remontée du pétrole. TotalEnergies a fait partie des valeurs en forme.</p><p class="src">Sources : <a href="https://www.boursorama.com/bourse/actualites/une-semaine-sur-les-marches-le-recap-du-9-au-13-novembre-d27af8b5274251a38d901c92d8c83ff3">Boursorama</a> · <a href="https://www.moneyvox.fr/bourse/actualites/111240/le-cac-40-totalenergies-en-forme-le-journal-de-la-bourse-du-vendredi-13-novembre-2026">Moneyvox</a></p></div>
+  <div class="it"><span class="rb">PÉTROLE</span><h3>Le baril repasse près de 100 dollars</h3><p>Le Brent, le pétrole de référence en Europe, dépasse 98 dollars le baril.</p><p class="bl" aria-hidden="true">Un pétrole cher, c'est de l'inflation en plus à la pompe, et un argument de plus pour les banques centrales qui veulent monter leurs taux.</p><p class="src">Sources : <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a> · <a href="https://www.moneyvox.fr/bourse/actualites/111240/le-cac-40-totalenergies-en-forme-le-journal-de-la-bourse-du-vendredi-13-novembre-2026">Moneyvox</a></p></div>
+  <div class="it"><span class="rb">CRYPTO</span><h3>Bitcoin : 5 semaines de baisse d'affilée</h3><p>Le bitcoin tourne autour de 74 000 dollars, loin de son record de 126 000 dollars d'octobre 2025.</p><p class="bl" aria-hidden="true">Les fonds bitcoin cotés en Bourse voient l'argent sortir, et la perspective d'une hausse des taux n'aide pas les actifs les plus risqués.</p><p class="src">Sources : <a href="https://cryptoticker.io/fr/cours-bitcoin-sorties-ibit-moyenne-mobile-200-jours/">Cryptoticker</a> · <a href="https://www.capmad.com/article/le-bitcoin-glisse-a-77300-son-plus-bas-en-plus-dun-mois-sur-fond-de-stress-reglementaire-americain">Capmad</a></p></div>
+</section>
 </main>
 
 <footer class="wrap">Avance Bourse · l'actu des marchés, chaque matin. Information générale : ce n'est pas un conseil en investissement personnalisé. Investir comporte un risque de perte en capital.</footer>
@@ -119,6 +137,7 @@ document.getElementById("f").addEventListener("submit",e=>{
   document.getElementById("box").innerHTML='<span class="k">✓ C\'EST DÉBLOQUÉ</span><h3>Bonne lecture. Ta première édition arrive demain à 7 h.</h3>';
   w.prepend(document.getElementById("box"));w.classList.add("open");
   document.getElementById("suite").removeAttribute("aria-hidden");
+  document.getElementById("more").classList.add("open");document.querySelectorAll("#more .bl").forEach(x=>x.removeAttribute("aria-hidden"));
 });
 </script>
 </body>
