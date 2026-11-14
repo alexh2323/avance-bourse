@@ -4,137 +4,203 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light only">
-<meta name="robots" content="noindex">
-
 <title>Anthropic entre en Bourse · Avance Bourse</title>
-<meta name="description" content="La société derrière Claude vise le Nasdaq dès la semaine prochaine. Ce qu'il faut savoir avant.">
+<meta name="description" content="La société derrière Claude vise le Nasdaq dès la semaine prochaine. Et 5 autres choses qui ont fait bouger les marchés.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FFFFFF;--card:#ffffff;--rose:#EAF5EF;--red:#1F7A4D;--red2:#155C39;--bord:#123A27;--fg:#2D2926;--mute:#6E6460;--line:#E3E6E4}
+:root{--ink:#0B1B2B;--ink2:#33414F;--mute:#6B7785;--line:#E4E8EC;--bg:#FFFFFF;--soft:#F4F6F8;--up:#0E9F6E;--upbg:#E7F6F0;--dn:#D93A3F;--dnbg:#FCECEC;--acc:#0E9F6E;--navy:#0B1B2B}
 *{box-sizing:border-box;margin:0}
 html{-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--fg);font:400 17.5px/1.6 "Figtree",system-ui,-apple-system,sans-serif}
-.wrap{max-width:560px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px)) max(18px,env(safe-area-inset-right,0px))}
+body{background:var(--bg);color:var(--ink);font:500 17px/1.6 "Manrope",system-ui,-apple-system,sans-serif}
+a{color:inherit}
+.wrap{max-width:600px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px)) max(18px,env(safe-area-inset-right,0px))}
+/* bandeau marché */
+.tape{background:var(--navy);color:#fff;overflow:hidden;white-space:nowrap;font-size:13.5px;font-weight:700}
+.tape .row{display:inline-flex;gap:26px;padding:9px 0;animation:defile 26s linear infinite}
+.tape span{display:inline-flex;gap:6px;align-items:center}
+.tape i{font-style:normal;color:#9FB0C0;font-weight:600}
+.tape .u{color:#3DDC97}.tape .d{color:#FF7A7E}
+@keyframes defile{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tape .row{animation:none}}
+/* entête */
 .top{display:flex;justify-content:space-between;align-items:center;padding-block:14px;border-bottom:1px solid var(--line)}
-.logo{font-weight:800;font-size:19px;letter-spacing:-.01em}
-.logo{display:flex;align-items:center;gap:9px}
-.logo b{color:var(--red)}
-.lt{display:grid;line-height:1.05}
-.lt small{font-size:11.5px;font-weight:500;color:var(--mute);letter-spacing:.02em;margin-top:2px}
-.tag{font-size:13px;color:var(--mute)}
-.art{padding-block:20px 0;display:grid;gap:16px}
-.rub{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--red)}
-h1{font-weight:800;font-size:clamp(2.1rem,10vw,2.8rem);line-height:1.04;letter-spacing:-.02em;text-wrap:balance}
-.chap{font-size:19px;font-weight:700;line-height:1.45}
-.by{font-size:14px;color:var(--mute);border-block:1px solid var(--line);padding-block:9px}
-.un{background:var(--rose);border-radius:10px;padding:13px 15px}
-.body{display:grid;gap:14px}
-.body ul{padding-left:20px;display:grid;gap:10px}
-.body h2{font-size:1.25rem;line-height:1.25;letter-spacing:-.01em;margin-top:4px}
-.body blockquote{border-top:1px solid var(--line);padding-top:12px;color:var(--bord);font-weight:600}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font-weight:800;font-size:19px;letter-spacing:-.02em}
+.logo b em{font-style:normal;color:var(--acc)}
+.logo small{display:block;font-size:11.5px;color:var(--mute);font-weight:600;line-height:1.1}
+.pill{font-size:12px;font-weight:800;color:var(--acc);background:var(--upbg);border-radius:999px;padding:5px 10px}
+/* article */
+.art{padding-block:22px 6px;display:grid;gap:16px}
+.rub{font-size:12.5px;font-weight:800;letter-spacing:.08em;color:var(--acc)}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:clamp(2.1rem,9.6vw,3rem);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
+.chap{font-size:18.5px;line-height:1.5;color:var(--ink2);font-weight:600}
+.by{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--mute)}
+.by .dot{width:6px;height:6px;border-radius:50%;background:var(--up)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.facts div{border:1.5px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;display:grid;gap:3px}
+.facts b{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.facts span{font-size:12px;color:var(--mute);line-height:1.25}
+.oneword{background:var(--navy);color:#fff;border-radius:14px;padding:16px 16px;font-size:16.5px;line-height:1.5}
+.oneword b{color:#3DDC97}
+.body{display:grid;gap:12px}
+.body ul{list-style:none;padding:0;display:grid;gap:10px}
+.body li{display:grid;grid-template-columns:22px 1fr;gap:8px}
+.body li::before{content:"→";color:var(--acc);font-weight:800}
+.body h2{font-family:"Source Serif 4",Georgia,serif;font-size:1.35rem;line-height:1.25;margin-top:6px}
+.body blockquote{border-left:0;padding:14px 16px;background:var(--soft);border-radius:12px;font-weight:700}
+.src{font-size:12.5px;color:var(--mute)}
+/* mur */
 .wall{position:relative}
 .wall .blur{filter:blur(6px);user-select:none;pointer-events:none}
-.wall::before{content:"";position:absolute;inset:-60px 0 auto 0;height:80px;background:linear-gradient(rgba(255,255,255,0),var(--bg));z-index:1;pointer-events:none}
+.wall::before{content:"";position:absolute;inset:-50px 0 auto 0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff);z-index:1;pointer-events:none}
 .wall.open::before{display:none}
 .wall.open .blur{filter:none;user-select:auto;pointer-events:auto}
-.box{position:absolute;left:0;right:0;top:10px;z-index:2;background:var(--card);border:2px solid var(--fg);border-radius:14px;padding:20px 16px;display:grid;gap:12px;box-shadow:0 18px 40px rgba(45,41,38,.15)}
-.wall.open .box{position:static;margin-bottom:18px;box-shadow:none;border-color:var(--line)}
-.box .k{font-size:13px;font-weight:800;letter-spacing:.05em;color:var(--red)}
-.box h3{font-size:1.3rem;line-height:1.22;letter-spacing:-.01em}
-.box p{font-size:15.5px;color:var(--mute)}
+.gate{position:absolute;left:0;right:0;top:0;z-index:2;background:var(--navy);color:#fff;border-radius:18px;padding:22px 18px;display:grid;gap:14px;box-shadow:0 20px 50px rgba(11,27,43,.28)}
+.wall.open .gate{position:static;margin-bottom:16px;box-shadow:none}
+.gate .k{font-size:12px;font-weight:800;letter-spacing:.08em;color:#3DDC97}
+.gate h3{font-family:"Source Serif 4",Georgia,serif;font-size:1.45rem;line-height:1.2}
+.gate .perks{display:flex;flex-wrap:wrap;gap:6px}
+.gate .perks span{display:inline-flex;gap:6px;font-size:12.5px;font-weight:700;background:rgba(255,255,255,.1);border-radius:999px;padding:5px 10px}
 form{display:grid;gap:10px}
-input[type=email]{width:100%;min-height:56px;border:1.5px solid #cfc4bb;border-radius:10px;padding:0 14px;font:500 17px "Figtree",sans-serif;color:var(--fg);background:#fff}
-.btn{display:grid;place-items:center;width:100%;min-height:56px;border:0;border-radius:10px;background:var(--red);color:#fff;font:800 18px "Figtree",sans-serif;cursor:pointer;text-decoration:none;box-shadow:0 4px 0 var(--red2)}
-.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--red2)}
-.btn:focus-visible,input:focus-visible{outline:3px solid var(--bord);outline-offset:2px}
-.err{color:var(--red2);font-size:14px}
-.meta{font-size:13.5px;color:var(--mute);text-align:center}
-#sp{height:110px}
-.wall.open #sp{display:none}
-.part{border:1.5px dashed #d9b8bd;border-radius:12px;padding:14px;display:grid;gap:10px;font-size:15.5px;margin-top:6px}
-.part .p1{font-size:12px;letter-spacing:.06em;font-weight:700;color:var(--mute)}
-.part a.btn{min-height:50px;font-size:16px}
-footer{padding-block:22px 30px;font-size:13px;color:var(--mute);border-top:1px solid var(--line);margin-top:24px}
-.more{display:grid;gap:0;margin-top:26px;border-top:3px solid var(--fg)}
-.more .ht{font-size:13px;font-weight:800;letter-spacing:.06em;padding-block:14px 4px}
-.it{padding-block:16px;border-bottom:1px solid var(--line);display:grid;gap:8px}
-.it .rb{font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--red)}
-.it h3{font-size:1.2rem;line-height:1.25;letter-spacing:-.01em}
-.it p{font-size:16.5px;line-height:1.55}
-.it .bl{filter:blur(5px);user-select:none;transition:filter .3s}
-.it .src{font-size:13px;color:var(--mute)}.it .src a{color:inherit}
-.more.open .bl{filter:none;user-select:auto}
-.it .src{display:none}.more.open .it .src{display:block}
-.kpi{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;background:var(--rose);border-radius:12px;padding:12px 14px}
-.kpi .n{font-weight:800;font-size:2rem;line-height:1;letter-spacing:-.02em;white-space:nowrap}
-.kpi .n.up{color:#1F7A4D}.kpi .n.dn{color:#C0262D}.kpi .n.neu{color:var(--fg)}
-.kpi .l{font-size:14px;line-height:1.3;color:var(--ink2,#3a3835)}
-.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.strip div{background:var(--rose);border-radius:10px;padding:10px 8px;text-align:center;display:grid;gap:2px}
-.strip b{font-size:1.25rem;font-weight:800;line-height:1.1}
-.strip span{font-size:12px;color:var(--mute);line-height:1.2}
-.it p b,.body li b{color:var(--fg)}
+input[type=email]{width:100%;min-height:56px;border:0;border-radius:12px;padding:0 16px;font:600 17px "Manrope",sans-serif;color:var(--ink);background:#fff}
+.btn{display:grid;place-items:center;width:100%;min-height:56px;border:0;border-radius:12px;background:var(--up);color:#fff;font:800 18px "Manrope",sans-serif;cursor:pointer}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible,input:focus-visible{outline:3px solid #3DDC97;outline-offset:2px}
+.err{color:#FF9A9E;font-size:14px}
+.fine{font-size:12.5px;color:#9FB0C0;text-align:center}
+#sp{height:40px}.wall.open #sp{display:none}
+/* actus */
+.more{margin-top:28px;display:grid;gap:12px}
+.more .ht{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--mute)}
+.more .ht::after{content:"";flex:1;height:1px;background:var(--line)}
+.card{border:1.5px solid var(--line);border-radius:16px;padding:16px;display:grid;gap:10px;background:#fff}
+.card .hd{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tag{font-size:11.5px;font-weight:800;letter-spacing:.07em;color:var(--mute)}
+.chg{font-size:12.5px;font-weight:800;border-radius:999px;padding:4px 9px;white-space:nowrap}
+.chg.u{color:var(--up);background:var(--upbg)}.chg.d{color:var(--dn);background:var(--dnbg)}.chg.n{color:var(--ink2);background:var(--soft)}
+.card h3{font-family:"Source Serif 4",Georgia,serif;font-size:1.3rem;line-height:1.22}
+.big{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.big b{font-size:2.3rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+.big b.u{color:var(--up)}.big b.d{color:var(--dn)}
+.big span{font-size:14px;color:var(--mute);font-weight:600}
+.card p{font-size:16px;line-height:1.55;color:var(--ink2)}
+.card p strong{color:var(--ink)}
+.card .bl{filter:blur(5px);user-select:none}
+.more.open .card .bl{filter:none;user-select:auto}
+.card .src{display:none}.more.open .card .src{display:block}
+.cta2{margin-top:6px;background:var(--soft);border-radius:16px;padding:18px 16px;display:grid;gap:10px;text-align:center}
+.cta2 p{font-weight:800;font-size:17px}
+.more.open .cta2{display:none}
+footer{margin-top:28px;padding-block:20px 34px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mute);display:grid;gap:6px}
 </style>
 </head>
 <body>
+<div class="tape" aria-label="Les chiffres de la semaine"><div class="row">
+  <span><i>CAC 40</i> 8 369 <em class="u">▲ 2,8 %</em></span><span><i>S&amp;P 500 · 5/11</i> <em class="d">▼ 4,4 %</em></span><span><i>Taux US 10 ans</i> <em class="d">&gt; 5 %</em></span><span><i>Brent</i> 98 $</span><span><i>Bitcoin</i> ~74 000 $ <em class="d">▼ 41 % vs record</em></span><span><i>Nvidia · résultats</i> mar. 17</span>
+  <span><i>CAC 40</i> 8 369 <em class="u">▲ 2,8 %</em></span><span><i>S&amp;P 500 · 5/11</i> <em class="d">▼ 4,4 %</em></span><span><i>Taux US 10 ans</i> <em class="d">&gt; 5 %</em></span><span><i>Brent</i> 98 $</span><span><i>Bitcoin</i> ~74 000 $ <em class="d">▼ 41 % vs record</em></span><span><i>Nvidia · résultats</i> mar. 17</span>
+</div></div>
+
 <header class="wrap top">
-  <div class="logo"><svg class="mark" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="9" fill="#1F7A4D"/><path d="M9 27l7-7 5 4 10-11" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 13h6v6" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lt"><span>Avance <b>Bourse</b></span><small>la bourse en 3 minutes, à 7 h</small></span></div>
-  <div class="tag">gratuit</div>
+  <div class="logo"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#0B1B2B"/><path d="M9 27l7-7 5 4 10-11" fill="none" stroke="#3DDC97" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 13h6v6" fill="none" stroke="#3DDC97" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Avance <em>Bourse</em></b><small>la Bourse en 3 min, à 7 h</small></div></div>
+  <span class="pill">GRATUIT</span>
 </header>
 
 <main class="wrap">
   <article class="art">
-    <span class="rub">INTRODUCTION EN BOURSE · IA</span>
+    <span class="rub">À LA UNE · INTRODUCTION EN BOURSE</span>
     <h1>Anthropic, la société derrière Claude, entre en Bourse.</h1>
-    <p class="chap">Le dossier est déposé, le nom de code au Nasdaq est choisi, et la presse parle d'une cotation dès la semaine prochaine. L'une des plus grosses entrées en Bourse de l'histoire se prépare.</p>
-    <p class="by">Avance Bourse · 14 nov. 2026 · 3 min de lecture</p>
-    <div class="strip"><div><b>ANT</b><span>son symbole au Nasdaq</span></div><div><b>26 oct.</b><span>dossier déposé</span></div><div><b>16 nov.</b><span>semaine visée</span></div></div>
-
+    <p class="chap">Le dossier est déposé, le symbole est choisi. Selon la presse, la cotation est visée <strong>dès la semaine prochaine</strong>.</p>
+    <p class="by"><span class="dot"></span>Avance Bourse · 14 nov. 2026 · 3 min</p>
+    <div class="facts"><div><b>ANT</b><span>symbole au Nasdaq</span></div><div><b>26 oct.</b><span>dossier déposé</span></div><div><b>16 nov.</b><span>semaine visée</span></div></div>
+    <p class="oneword"><b>En un mot :</b> l'IA qui fait trembler Wall Street depuis 10 jours va bientôt avoir son propre cours de Bourse.</p>
     <div class="body">
-      <p class="un"><b>En un mot :</b> l'IA qui fait trembler Wall Street depuis 10 jours va bientôt avoir <b>son propre cours de Bourse</b>.</p>
       <ul>
-        <li>Le 26 octobre, Anthropic a rendu public son dossier d'introduction en Bourse auprès du gendarme américain des marchés.</li>
-        <li>Cotation visée au Nasdaq, sous le symbole <b>ANT</b>.</li>
+        <li><span>Le <strong>26 octobre</strong>, Anthropic a rendu public son dossier d'entrée en Bourse auprès du gendarme américain des marchés.</span></li>
+        <li><span>Cotation visée au <strong>Nasdaq</strong>, sous le symbole <strong>ANT</strong>.</span></li>
       </ul>
     </div>
 
     <div class="wall" id="wall">
       <div class="body blur" id="suite" aria-hidden="true">
         <ul>
-          <li>Selon la presse, les premières cotations sont visées la semaine du 16 novembre.</li>
-          <li>Le contexte est tendu : le 5 novembre, le S&amp;P 500 a chuté de 4,4 %, son pire jour depuis avril 2025, entraîné par les valeurs de l'IA. Nvidia a perdu 9,3 % en une séance.</li>
-          <li>Les estimations de valorisation varient énormément d'un média à l'autre : tant que le prix n'est pas fixé, aucun chiffre n'est fiable.</li>
+          <li><span>Selon la presse, les premières cotations sont visées la semaine du 16 novembre.</span></li>
+          <li><span>Le contexte est tendu : le 5 novembre, le S&amp;P 500 a chuté de 4,4 %, son pire jour depuis avril 2025. Nvidia a perdu 9,3 % en une séance.</span></li>
+          <li><span>Les estimations de valorisation varient énormément d'un média à l'autre : tant que le prix n'est pas fixé, aucun chiffre n'est fiable.</span></li>
         </ul>
         <h2>Pourquoi tout le monde la regarde</h2>
-        <p>C'est le premier grand test public de la bulle IA. Si l'introduction se passe bien, tout le secteur respire. Si elle déçoit, les investisseurs qui ont fait monter Nvidia et les autres risquent de se poser des questions.</p>
+        <p>C'est le premier grand test public de la bulle IA. Si l'introduction se passe bien, tout le secteur respire. Si elle déçoit, ceux qui ont fait monter Nvidia et les autres risquent de se poser des questions.</p>
         <blockquote>Demain à 7 h : ce que disent les chiffres du dossier, et ce qu'il faut surveiller le jour J.</blockquote>
-        <p style="font-size:14px;color:var(--mute)">Sources : <a href="https://fr.euronews.com/2026/11/11/ipo-danthropic-test-du-boom-des-depenses-dia-aux-etats-unis" style="color:inherit">Euronews (11/11)</a> · <a href="https://blog-nouvelles-technologies.fr/390378/anthropic-ipo-s1-nasdaq-ant-chiffre-affaires" style="color:inherit">Blog Nouvelles Technologies</a> · <a href="https://www.iposcoop.com/?p=39348" style="color:inherit">IPO Scoop / NYT</a> · <a href="https://www.boston.com/news/national-news/2026/11/05/a-brutal-sell-off-for-ai-stocks-sends-wall-street-reeling-and-the-sp-500-tumbles-4-4/" style="color:inherit">AP (5/11)</a>. Information générale, pas une recommandation d'achat.</p>
+        <p class="src">Sources : <a href="https://fr.euronews.com/2026/11/11/ipo-danthropic-test-du-boom-des-depenses-dia-aux-etats-unis">Euronews</a> · <a href="https://blog-nouvelles-technologies.fr/390378/anthropic-ipo-s1-nasdaq-ant-chiffre-affaires">Blog Nouvelles Technologies</a> · <a href="https://www.iposcoop.com/?p=39348">IPO Scoop / NYT</a> · <a href="https://www.boston.com/news/national-news/2026/11/05/a-brutal-sell-off-for-ai-stocks-sends-wall-street-reeling-and-the-sp-500-tumbles-4-4/">AP</a></p>
       </div>
-      <div class="box" id="box">
+      <div class="gate" id="gate">
         <span class="k">LA SUITE EST RÉSERVÉE AUX LECTEURS</span>
-        <h3>Lis la suite gratuitement, et reçois chaque matin à 7 h la bourse en 3 minutes : les chiffres, ce qui bouge, ce que ça change.</h3>
+        <h3>Débloque la suite, et reçois la Bourse en 3 minutes chaque matin.</h3>
+        <div class="perks"><span>📈&nbsp;Les chiffres qui comptent</span><span>⏰&nbsp;7 h pile</span><span>🆓&nbsp;Gratuit</span></div>
         <form id="f" novalidate>
           <input id="email" type="email" inputmode="email" autocomplete="email" placeholder="Ton email" aria-label="Ton email" required>
           <p class="err" id="err" role="alert" hidden>Vérifie ton email.</p>
-          <button class="btn" type="submit">Lire la suite</button>
+          <button class="btn" type="submit">Lire la suite →</button>
         </form>
-        <p class="meta">Gratuit. 1 email chaque matin. Désinscription en 1 clic.</p>
+        <p class="fine">Désinscription en 1 clic. Aucun spam.</p>
       </div>
-      <div id="sp" style="height:20px"></div>
+      <div id="sp"></div>
     </div>
   </article>
-<section class="more" id="more" aria-label="Aussi ce matin">
-  <p class="ht">AUSSI DANS L'ÉDITION DE CE MATIN</p>
-  <div class="it"><span class="rb">NVIDIA</span><h3>Résultats mardi : le géant de l'IA sous pression</h3><div class="kpi"><span class="n neu">~109 Md$</span><span class="l">de chiffre d'affaires attendu, publication <b>mardi 17 novembre</b></span></div><p>Nvidia publie ses comptes le mardi 17 novembre. Les analystes attendent <b>environ 109 milliards de dollars</b> de chiffre d'affaires.</p><p class="bl" aria-hidden="true">Et le dossier est chargé : le conseil d'administration enquête sur des accusations visant son patron, Jensen Huang. Nvidia assure qu'il reste aux commandes. C'est la publication la plus attendue du trimestre, après le krach de l'IA du 5 novembre.</p><p class="src">Sources : <a href="https://www.cmcmarkets.com/en-ie/news-and-analysis/the-week-ahead-fed-minutes-japan-cpi-nvidia-earnings">CMC Markets</a> · <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a> · <a href="https://www.ibtimes.com/nvidia-jensen-huang-succession-plan-investigation-3809602">IBTimes</a></p></div>
-  <div class="it"><span class="rb">TAUX</span><h3>La Fed pourrait remonter ses taux en décembre</h3><div class="kpi"><span class="n dn">&gt; 5 %</span><span class="l">le taux de l'État américain à 10 ans. Décision de la Fed les <b>8 et 9 décembre</b></span></div><p>L'inflation américaine d'octobre est sortie <b>plus forte que prévu</b>. Les marchés parient désormais sur une hausse des taux de la Fed les 8 et 9 décembre.</p><p class="bl" aria-hidden="true">Le taux d'emprunt de l'État américain à 10 ans dépasse 5 %. Des taux plus hauts, c'est un crédit plus cher et, en général, des actions sous pression.</p><p class="src">Sources : <a href="https://www.fxstreet.com/analysis/week-ahead-fed-minutes-inflation-data-and-nvidia-earnings-to-guide-investors-202611131033">FXStreet</a> · <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a></p></div>
-  <div class="it"><span class="rb">PARIS</span><h3>Le CAC 40 efface le krach : +2,8 % sur la semaine</h3><div class="kpi"><span class="n up">+2,8 %</span><span class="l">sur la semaine, clôture à <b>8 369 points</b></span></div><p>Après la chute du 5 novembre, la Bourse de Paris a enchaîné <b>5 séances sans baisse</b> et finit la semaine à 8 369 points.</p><p class="bl" aria-hidden="true">Vendredi, l'indice a fini quasiment stable, freiné par la remontée du pétrole. TotalEnergies a fait partie des valeurs en forme.</p><p class="src">Sources : <a href="https://www.boursorama.com/bourse/actualites/une-semaine-sur-les-marches-le-recap-du-9-au-13-novembre-d27af8b5274251a38d901c92d8c83ff3">Boursorama</a> · <a href="https://www.moneyvox.fr/bourse/actualites/111240/le-cac-40-totalenergies-en-forme-le-journal-de-la-bourse-du-vendredi-13-novembre-2026">Moneyvox</a></p></div>
-  <div class="it"><span class="rb">PÉTROLE</span><h3>Le baril repasse près de 100 dollars</h3><div class="kpi"><span class="n dn">98 $</span><span class="l">le baril de Brent, <b>proche des 100 dollars</b></span></div><p>Le Brent, le pétrole de référence en Europe, dépasse <b>98 dollars</b> le baril.</p><p class="bl" aria-hidden="true">Un pétrole cher, c'est de l'inflation en plus à la pompe, et un argument de plus pour les banques centrales qui veulent monter leurs taux.</p><p class="src">Sources : <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a> · <a href="https://www.moneyvox.fr/bourse/actualites/111240/le-cac-40-totalenergies-en-forme-le-journal-de-la-bourse-du-vendredi-13-novembre-2026">Moneyvox</a></p></div>
-  <div class="it"><span class="rb">CRYPTO</span><h3>Bitcoin : 5 semaines de baisse d'affilée</h3><div class="kpi"><span class="n dn">−41 %</span><span class="l">sous son record : <b>~74 000 $</b> contre <b>126 000 $</b></span></div><p>Le bitcoin tourne autour de <b>74 000 dollars</b>, loin de son record de 126 000 dollars d'octobre 2025.</p><p class="bl" aria-hidden="true">Les fonds bitcoin cotés en Bourse voient l'argent sortir, et la perspective d'une hausse des taux n'aide pas les actifs les plus risqués.</p><p class="src">Sources : <a href="https://cryptoticker.io/fr/cours-bitcoin-sorties-ibit-moyenne-mobile-200-jours/">Cryptoticker</a> · <a href="https://www.capmad.com/article/le-bitcoin-glisse-a-77300-son-plus-bas-en-plus-dun-mois-sur-fond-de-stress-reglementaire-americain">Capmad</a></p></div>
-</section>
+
+  <section class="more" id="more" aria-label="Aussi ce matin">
+    <p class="ht">AUSSI CE MATIN</p>
+
+    <div class="card">
+      <div class="hd"><span class="tag">NVIDIA</span><span class="chg n">MARDI 17 NOV.</span></div>
+      <h3>Résultats mardi : le géant de l'IA sous pression</h3>
+      <div class="big"><b>~109 Md$</b><span>de chiffre d'affaires attendu</span></div>
+      <p>La publication <strong>la plus attendue du trimestre</strong>, après le krach de l'IA du 5 novembre.</p>
+      <p class="bl" aria-hidden="true">Et le dossier est chargé : le conseil d'administration enquête sur des accusations visant son patron, Jensen Huang. Nvidia assure qu'il reste aux commandes.</p>
+      <p class="src">Sources : <a href="https://www.cmcmarkets.com/en-ie/news-and-analysis/the-week-ahead-fed-minutes-japan-cpi-nvidia-earnings">CMC Markets</a> · <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a> · <a href="https://www.ibtimes.com/nvidia-jensen-huang-succession-plan-investigation-3809602">IBTimes</a></p>
+    </div>
+
+    <div class="card">
+      <div class="hd"><span class="tag">TAUX</span><span class="chg d">▲ RISQUE DE HAUSSE</span></div>
+      <h3>La Fed pourrait remonter ses taux en décembre</h3>
+      <div class="big"><b class="d">&gt; 5 %</b><span>le taux américain à 10 ans</span></div>
+      <p>L'inflation américaine d'octobre est sortie <strong>plus forte que prévu</strong>. Décision de la Fed les <strong>8 et 9 décembre</strong>.</p>
+      <p class="bl" aria-hidden="true">Des taux plus hauts, c'est un crédit plus cher et, en général, des actions sous pression. Les marchés parient désormais sur une hausse.</p>
+      <p class="src">Sources : <a href="https://www.fxstreet.com/analysis/week-ahead-fed-minutes-inflation-data-and-nvidia-earnings-to-guide-investors-202611131033">FXStreet</a> · <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a></p>
+    </div>
+
+    <div class="card">
+      <div class="hd"><span class="tag">PARIS</span><span class="chg u">▲ 2,8 % SUR LA SEMAINE</span></div>
+      <h3>Le CAC 40 efface le krach</h3>
+      <div class="big"><b class="u">8 369</b><span>points vendredi soir</span></div>
+      <p><strong>5 séances sans baisse</strong> après la chute du 5 novembre.</p>
+      <p class="bl" aria-hidden="true">Vendredi, l'indice a fini quasiment stable, freiné par la remontée du pétrole. TotalEnergies a fait partie des valeurs en forme.</p>
+      <p class="src">Sources : <a href="https://www.boursorama.com/bourse/actualites/une-semaine-sur-les-marches-le-recap-du-9-au-13-novembre-d27af8b5274251a38d901c92d8c83ff3">Boursorama</a> · <a href="https://www.moneyvox.fr/bourse/actualites/111240/le-cac-40-totalenergies-en-forme-le-journal-de-la-bourse-du-vendredi-13-novembre-2026">Moneyvox</a></p>
+    </div>
+
+    <div class="card">
+      <div class="hd"><span class="tag">PÉTROLE</span><span class="chg d">▲ PROCHE DES 100 $</span></div>
+      <h3>Le baril se rapproche des 100 dollars</h3>
+      <div class="big"><b class="d">98 $</b><span>le baril de Brent</span></div>
+      <p>Plus d'inflation <strong>à la pompe</strong>, et un argument de plus pour monter les taux.</p>
+      <p class="bl" aria-hidden="true">Le Brent est le pétrole de référence en Europe. Sa remontée a aussi freiné la Bourse de Paris vendredi.</p>
+      <p class="src">Sources : <a href="https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/">InvestingLive</a> · <a href="https://www.moneyvox.fr/bourse/actualites/111240/le-cac-40-totalenergies-en-forme-le-journal-de-la-bourse-du-vendredi-13-novembre-2026">Moneyvox</a></p>
+    </div>
+
+    <div class="card">
+      <div class="hd"><span class="tag">CRYPTO</span><span class="chg d">▼ 5 SEMAINES DE BAISSE</span></div>
+      <h3>Bitcoin : loin, très loin du record</h3>
+      <div class="big"><b class="d">−41 %</b><span>~74 000 $ contre 126 000 $</span></div>
+      <p><strong>5 semaines de baisse d'affilée</strong> pour le bitcoin.</p>
+      <p class="bl" aria-hidden="true">Les fonds bitcoin cotés en Bourse voient l'argent sortir, et la perspective d'une hausse des taux n'aide pas les actifs les plus risqués.</p>
+      <p class="src">Sources : <a href="https://cryptoticker.io/fr/cours-bitcoin-sorties-ibit-moyenne-mobile-200-jours/">Cryptoticker</a> · <a href="https://www.capmad.com/article/le-bitcoin-glisse-a-77300-son-plus-bas-en-plus-dun-mois-sur-fond-de-stress-reglementaire-americain">Capmad</a></p>
+    </div>
+
+    <div class="cta2"><p>Tout lire, et recevoir l'édition de demain à 7 h</p><a class="btn" href="#gate">Débloquer gratuitement ↑</a></div>
+  </section>
 </main>
 
-<footer class="wrap">Avance Bourse · l'actu des marchés, chaque matin. Information générale : ce n'est pas un conseil en investissement personnalisé. Investir comporte un risque de perte en capital.</footer>
+<footer class="wrap"><p><strong>Avance Bourse</strong> · l'actu des marchés, chaque matin à 7 h.</p><p>Information générale : ce n'est pas un conseil en investissement personnalisé. Investir comporte un risque de perte en capital.</p></footer>
 
 <script>
 document.getElementById("f").addEventListener("submit",e=>{
@@ -142,12 +208,13 @@ document.getElementById("f").addEventListener("submit",e=>{
   const em=document.getElementById("email").value.trim();
   const ok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em);
   document.getElementById("err").hidden=ok;if(!ok)return;
-  // À BRANCHER avant toute pub : outil d'emailing (Beehiiv) + pixel Meta. Sans ça, les emails sont perdus.
+  // À BRANCHER avant toute pub : Beehiiv (abonnement) + pixel Meta. Sans ça, les emails sont perdus.
   const w=document.getElementById("wall");
-  document.getElementById("box").innerHTML='<span class="k">✓ C\'EST DÉBLOQUÉ</span><h3>Bonne lecture. Ta première édition arrive demain à 7 h.</h3>';
-  w.prepend(document.getElementById("box"));w.classList.add("open");
+  document.getElementById("gate").innerHTML='<span class="k">✓ C\'EST DÉBLOQUÉ</span><h3>Bonne lecture. Ta première édition arrive demain à 7 h.</h3>';
+  w.prepend(document.getElementById("gate"));w.classList.add("open");
   document.getElementById("suite").removeAttribute("aria-hidden");
-  document.getElementById("more").classList.add("open");document.querySelectorAll("#more .bl").forEach(x=>x.removeAttribute("aria-hidden"));
+  document.getElementById("more").classList.add("open");
+  document.querySelectorAll("#more .bl").forEach(x=>x.removeAttribute("aria-hidden"));
 });
 </script>
 </body>
