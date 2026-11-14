@@ -3,123 +3,143 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="light only">
-<meta name="robots" content="noindex">
-
-<title>98 % des fonds font moins bien que le marché · Avance Bourse</title>
-<meta name="description" content="Sur 10 ans, 98 fonds sur 100 font moins bien que la Bourse de Paris elle-même.">
+<title>4 choses ont bougé en Bourse · Avance Bourse</title>
+<meta name="description" content="4 choses viennent de se passer en Bourse. Tu en connais combien ?">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#FFFFFF;--card:#ffffff;--rose:#EAF5EF;--red:#1F7A4D;--red2:#155C39;--bord:#123A27;--fg:#2D2926;--mute:#6E6460;--line:#E3E6E4}
-*{box-sizing:border-box;margin:0}
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Literata:opsz,wght@7..72,500;7..72,700&family=VT323&display=swap" rel="stylesheet">
+<style>:root{--bg:#ffffff;--panel:#f4f4f5;--line:#e4e2e0;--fg:#17171a;--mute:#5f5b57;--red:#e5262a;--red2:#d81f23;--ink2:#3a3835}
+*{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--fg);font:400 17.5px/1.6 "Figtree",system-ui,-apple-system,sans-serif}
-.wrap{max-width:560px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px)) max(18px,env(safe-area-inset-right,0px))}
-.top{display:flex;justify-content:space-between;align-items:center;padding-block:14px;border-bottom:1px solid var(--line)}
-.logo{font-weight:800;font-size:19px;letter-spacing:-.01em}
-.logo{display:flex;align-items:center;gap:9px}
-.logo b{color:var(--red)}
-.lt{display:grid;line-height:1.05}
-.lt small{font-size:11.5px;font-weight:500;color:var(--mute);letter-spacing:.02em;margin-top:2px}
-.tag{font-size:13px;color:var(--mute)}
-.art{padding-block:20px 0;display:grid;gap:16px}
-.rub{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--red)}
-h1{font-weight:800;font-size:clamp(2.1rem,10vw,2.8rem);line-height:1.04;letter-spacing:-.02em;text-wrap:balance}
-.chap{font-size:19px;font-weight:700;line-height:1.45}
-.by{font-size:14px;color:var(--mute);border-block:1px solid var(--line);padding-block:9px}
-.un{background:var(--rose);border-radius:10px;padding:13px 15px}
-.body{display:grid;gap:14px}
-.body ul{padding-left:20px;display:grid;gap:10px}
-.body h2{font-size:1.25rem;line-height:1.25;letter-spacing:-.01em;margin-top:4px}
-.body blockquote{border-top:1px solid var(--line);padding-top:12px;color:var(--bord);font-weight:600}
-.wall{position:relative}
-.wall .blur{filter:blur(6px);user-select:none;pointer-events:none}
-.wall::before{content:"";position:absolute;inset:-60px 0 auto 0;height:80px;background:linear-gradient(rgba(255,255,255,0),var(--bg));z-index:1;pointer-events:none}
-.wall.open::before{display:none}
-.wall.open .blur{filter:none;user-select:auto;pointer-events:auto}
-.box{position:absolute;left:0;right:0;top:10px;z-index:2;background:var(--card);border:2px solid var(--fg);border-radius:14px;padding:20px 16px;display:grid;gap:12px;box-shadow:0 18px 40px rgba(45,41,38,.15)}
-.wall.open .box{position:static;margin-bottom:18px;box-shadow:none;border-color:var(--line)}
-.box .k{font-size:13px;font-weight:800;letter-spacing:.05em;color:var(--red)}
-.box h3{font-size:1.3rem;line-height:1.22;letter-spacing:-.01em}
-.box p{font-size:15.5px;color:var(--mute)}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.55 "Archivo",system-ui,sans-serif;}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+.px{font-family:"VT323",ui-monospace,monospace;letter-spacing:.04em}
+h1,h2{font-family:"Archivo",system-ui,sans-serif;font-weight:800;letter-spacing:-.02em;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,7.4vw,3.1rem);line-height:1.06}
+h2{font-size:clamp(1.45rem,5vw,1.9rem);line-height:1.15}
+.red{color:var(--red2)}
+p{margin:0;text-wrap:pretty}
+.top{display:flex;align-items:center;justify-content:space-between;padding-block:18px;border-bottom:1px solid var(--line)}
+.logo{font-family:"VT323",monospace;font-size:30px;line-height:1;display:flex;align-items:center;gap:10px}
+.logo i{width:12px;height:12px;background:var(--red);display:inline-block}
+.tag{font-size:20px;color:var(--mute)}
+.btn{appearance:none;border:0;border-radius:4px;background:var(--red);color:#fff;font:700 18px/1 "Archivo",sans-serif;
+ min-height:56px;padding:0 22px;width:100%;cursor:pointer;box-shadow:0 4px 0 #8f1013;transition:transform .12s ease-out,box-shadow .12s ease-out}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #8f1013}
+.btn:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+input,select{width:100%;min-height:56px;border-radius:4px;border:1.5px solid #cfccc9;background:#fff;color:var(--fg);font:400 17px "Archivo",sans-serif;padding:0 16px}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.small{font-size:14px;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding-block:28px 40px;margin-top:56px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<style>
+.mast{padding-block:28px 18px;display:grid;gap:12px}
+.mast h1{font-family:"Literata",Georgia,serif;font-weight:700;font-size:clamp(2rem,8.6vw,3.1rem);line-height:1.05;letter-spacing:-.02em}
+.mast p{font-size:17px;color:var(--ink2)}
+.score{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding-block:10px;display:flex;justify-content:space-between;align-items:center;font-size:20px}
+.score b{color:var(--red2)}
+.bar{height:6px;background:var(--panel);border-radius:3px;overflow:hidden;flex:1;margin-left:14px}
+.bar i{display:block;height:100%;width:0;background:var(--red);transition:width .35s cubic-bezier(.22,1,.36,1)}
+.q{padding-block:20px;border-bottom:1px solid var(--line);display:grid;gap:10px}
+.q .d{font-size:18px;color:var(--red2)}
+.q h2{font-family:"Literata",Georgia,serif;font-weight:700;font-size:1.28rem;line-height:1.25}
+.q .why{font-size:16px;color:var(--ink2);filter:blur(5px);user-select:none;transition:filter .3s ease-out}
+.q.done .why{filter:none}
+.ans{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ans button{min-height:48px;border-radius:4px;font:600 16px "Archivo",sans-serif;cursor:pointer;border:1.5px solid #cfccc9;background:#fff;color:var(--fg)}
+.ans button.no{border-color:var(--fg)}
+.q.done .ans{display:none}
+.tagr{font-size:18px}
+.res{padding-block:26px 6px;display:grid;gap:12px}
+.res .big{font-family:"VT323",monospace;font-size:clamp(4rem,22vw,6rem);line-height:.8;color:var(--red2)}
+.res h2{font-family:"Literata",Georgia,serif;font-size:1.55rem;line-height:1.2}
+.res p{color:var(--ink2)}
 form{display:grid;gap:10px}
-input[type=email]{width:100%;min-height:56px;border:1.5px solid #cfc4bb;border-radius:10px;padding:0 14px;font:500 17px "Figtree",sans-serif;color:var(--fg);background:#fff}
-.btn{display:grid;place-items:center;width:100%;min-height:56px;border:0;border-radius:10px;background:var(--red);color:#fff;font:800 18px "Figtree",sans-serif;cursor:pointer;text-decoration:none;box-shadow:0 4px 0 var(--red2)}
-.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--red2)}
-.btn:focus-visible,input:focus-visible{outline:3px solid var(--bord);outline-offset:2px}
-.err{color:var(--red2);font-size:14px}
-.meta{font-size:13.5px;color:var(--mute);text-align:center}
-#sp{height:110px}
-.wall.open #sp{display:none}
-.part{border:1.5px dashed #d9b8bd;border-radius:12px;padding:14px;display:grid;gap:10px;font-size:15.5px;margin-top:6px}
-.part .p1{font-size:12px;letter-spacing:.06em;font-weight:700;color:var(--mute)}
-.part a.btn{min-height:50px;font-size:16px}
-footer{padding-block:22px 30px;font-size:13px;color:var(--mute);border-top:1px solid var(--line);margin-top:24px}
+.meta{font-size:14px;color:var(--mute)}
 </style>
 </head>
 <body>
 <header class="wrap top">
-  <div class="logo"><svg class="mark" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="9" fill="#1F7A4D"/><path d="M9 27l7-7 5 4 10-11" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 13h6v6" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lt"><span>Avance <b>Bourse</b></span><small>la bourse en 3 minutes, à 7 h</small></span></div>
-  <div class="tag">gratuit</div>
+  <div class="logo"><i></i>AVANCE <span style="color:var(--red2)">BOURSE</span></div>
+  <div class="tag px">chaque matin · 7 h</div>
 </header>
 
 <main class="wrap">
-  <article class="art">
-    <span class="rub">ÉPARGNE · FONDS</span>
-    <h1>98 % des fonds font moins bien que le marché.</h1>
-    <p class="chap">Ton argent placé (assurance-vie, PEA) est souvent dans des « fonds » : un professionnel choisit les actions pour toi et prend des frais. Sur 10 ans, 98 fonds sur 100 ont fait moins bien que s'ils avaient juste acheté toute la Bourse de Paris d'un coup.</p>
-    <p class="by">Avance Bourse · 3 min de lecture</p>
+  <div class="mast">
+    <h1>4&nbsp;choses viennent de se passer en Bourse. Tu en connais combien&nbsp;?</h1>
+    <p>Réponds honnêtement. 20 secondes. Ceux qui gagnent en Bourse, eux, les connaissent déjà.</p>
+  </div>
 
-    <div class="body">
-      <p class="un"><b>En un mot :</b> avant de payer pour « mieux que le marché », regarde combien de fonds y arrivent vraiment.</p>
-      <p>Chaque année, S&amp;P Dow Jones Indices compare les fonds gérés activement à leur indice de référence. C'est l'étude SPIVA. Pour les fonds d'actions françaises, le verdict est brutal.</p>
-      <ul>
-        <li>Sur 10 ans, <b>98 %</b> des fonds d'actions françaises ont fait moins bien que leur indice.</li>
-        <li>Sur 3 ans, <b>95 %</b>.</li>
-      </ul>
-    </div>
+  <div class="score px"><span>RATÉES : <b id="miss">0</b> / 4</span><span class="bar"><i id="prog"></i></span></div>
 
-    <div class="wall" id="wall">
-      <div class="body blur" id="suite" aria-hidden="true">
-        <ul>
-          <li>Sur 5 ans, 98 % aussi.</li>
-          <li>2025 a été une exception : « seulement » 67 % des fonds ont fait moins bien que l'indice, contre 91 % l'année d'avant.</li>
-          <li>L'indice, lui, a pris 14,4 % en 2025.</li>
-        </ul>
-        <h2>Pourquoi c'est si dur de battre le marché</h2>
-        <p>Les frais. Un fonds qui prend 2 % par an doit faire 2 % de mieux que le marché juste pour être à égalité. Sur 10 ans, peu y arrivent.</p>
-        <blockquote>Le marché, tout le monde peut l'acheter. Le battre, presque personne.</blockquote>
-        <p style="font-size:14px;color:var(--mute)">Sources : <a href="https://www.toutsurmesfinances.com/actualites/a/fonds-actions-encore-une-majorite-de-perdants-face-aux-indices-en-2025" style="color:inherit">Tout sur mes finances, d'après SPIVA (S&amp;P Dow Jones Indices)</a> · <a href="https://www.indexologyblog.com/2026/04/13/2025-a-market-for-stock-pickers-in-france/" style="color:inherit">Indexology, S&amp;P</a>.</p>
-      </div>
-      <div class="box" id="box">
-        <span class="k">LA SUITE EST RÉSERVÉE AUX LECTEURS</span>
-        <h3>Lis la suite gratuitement, et reçois chaque matin à 7 h la bourse en 3 minutes : les chiffres, ce qui bouge, ce que ça change.</h3>
-        <form id="f" novalidate>
-          <input id="email" type="email" inputmode="email" autocomplete="email" placeholder="Ton email" aria-label="Ton email" required>
-          <p class="err" id="err" role="alert" hidden>Vérifie ton email.</p>
-          <button class="btn" type="submit">Lire la suite</button>
-        </form>
-        <p class="meta">Gratuit. 1 email chaque matin. Désinscription en 1 clic.</p>
-      </div>
-      <div id="sp"></div>
-    </div>
-  </article>
+  <div class="q">
+    <span class="d px">5 NOV.</span>
+    <h2>Wall Street a perdu environ 2 900 milliards de dollars en une seule journée. Du jamais vu, selon une estimation.</h2>
+    <p class="why">Le S&amp;P 500 a chuté de 4,4 %, son pire jour depuis avril 2025. Nvidia −9,3 %. Les valeurs de l'IA ont tout entraîné.</p>
+    <div class="ans"><button class="no">Je savais pas</button><button class="yes">Je savais</button></div>
+  </div>
+
+  <div class="q">
+    <span class="d px">26 OCT.</span>
+    <h2>Anthropic, la société derrière l'IA Claude, a déposé son dossier pour entrer en Bourse au Nasdaq.</h2>
+    <p class="why">Selon la presse, la cotation est visée la semaine du 16 novembre. L'une des plus grosses introductions en Bourse de l'histoire se prépare.</p>
+    <div class="ans"><button class="no">Je savais pas</button><button class="yes">Je savais</button></div>
+  </div>
+
+  <div class="q">
+    <span class="d px">7 AOÛT</span>
+    <h2>Le CAC 40 a battu son record historique cette année : 8 715 points.</h2>
+    <p class="why">Le 11 novembre, il tournait autour de 8 330 points. La Bourse de Paris est environ 4 % sous son plus haut.</p>
+    <div class="ans"><button class="no">Je savais pas</button><button class="yes">Je savais</button></div>
+  </div>
+
+  <div class="q">
+    <span class="d px">ÉTUDE</span>
+    <h2>Sur 10 ans, 98 % des fonds d'actions françaises ont fait moins bien que la Bourse de Paris elle-même.</h2>
+    <p class="why">Tu paies des frais à un gérant pour, la plupart du temps, faire moins bien que le marché. C'est l'étude SPIVA de S&amp;P.</p>
+    <div class="ans"><button class="no">Je savais pas</button><button class="yes">Je savais</button></div>
+  </div>
+
+  <div class="res" id="res">
+    <div class="big" id="bigmiss">?</div>
+    <h2 id="verdict">Réponds aux 4 pour voir ton score.</h2>
+    <p>Les lecteurs d'Avance Bourse avaient ces 4 infos le jour même, à 7 h, avec ce que ça change pour leur argent. En 3 minutes.</p>
+    <form id="f" novalidate>
+      <input id="email" type="email" inputmode="email" autocomplete="email" placeholder="Ton email" aria-label="Ton email" required>
+      <input type="hidden" id="metier" value="bourse">
+      <button class="btn" type="submit">Ne plus rien rater</button>
+      <p class="small" id="err" role="alert" hidden>Vérifie ton email.</p>
+    </form>
+    <p class="meta">Gratuit. Désinscription en 1 clic.</p>
+  </div>
 </main>
 
-<footer class="wrap">Avance Bourse · l'actu des marchés, chaque matin. Information générale : ce n'est pas un conseil en investissement personnalisé. Investir comporte un risque de perte en capital.</footer>
+<footer class="wrap small"><p>Avance Bourse · la Bourse en 3 minutes, chaque matin à 7 h. Information générale, pas un conseil en investissement personnalisé. Investir comporte un risque de perte en capital.</p>
+<p style="margin-top:8px">Sources : <a href="https://www.boston.com/news/national-news/2026/11/05/a-brutal-sell-off-for-ai-stocks-sends-wall-street-reeling-and-the-sp-500-tumbles-4-4/">AP (5/11)</a> · <a href="https://stockanalysis.com/news/sp-500-record-one-day-market-value-loss/">StockAnalysis</a> · <a href="https://fr.euronews.com/2026/11/11/ipo-danthropic-test-du-boom-des-depenses-dia-aux-etats-unis">Euronews</a> · <a href="https://www.frenchweb.fr/anthropic-prepare-une-ipo-de-64-milliards-de-dollars-ce-que-revelent-ses-comptes/900000035">FrenchWeb</a> · <a href="https://tradingeconomics.com/france/stock-market/news/573095">Trading Economics</a> · <a href="https://www.toutsurmesfinances.com/actualites/a/fonds-actions-encore-une-majorite-de-perdants-face-aux-indices-en-2025">SPIVA via Tout sur mes finances</a></p></footer>
 
 <script>
+let miss=0,done=0;
+const V=["Tu étais au courant de tout. Rare. Garde cette avance.","1 raté sur 4. En Bourse, une seule info ratée peut coûter cher.","2 ratés sur 4. La moitié de ce qui a fait bouger les marchés, tu ne l'as pas vu passer.","3 ratés sur 4. Ceux qui ont gagné cette semaine, eux, les connaissaient.","4 ratés sur 4. Les marchés ont bougé, et personne ne t'a prévenu."];
+document.querySelectorAll(".q").forEach(q=>{
+  q.querySelectorAll(".ans button").forEach(b=>b.addEventListener("click",()=>{
+    const no=b.classList.contains("no");
+    if(no)miss++;
+    done++;q.classList.add("done");
+    q.insertAdjacentHTML("beforeend",'<span class="tagr px" style="color:'+(no?'var(--red2)':'var(--mute)')+'">'+(no?'✕ RATÉE':'✓ TU SAVAIS')+'</span>');
+    document.getElementById("miss").textContent=miss;
+    document.getElementById("prog").style.width=(done*25)+"%";
+    if(done===4){document.getElementById("bigmiss").textContent=miss+"/4";document.getElementById("verdict").textContent=V[miss];
+      document.getElementById("res").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});}
+  }));
+});
+const q=new URLSearchParams(location.search).get("metier");if(q)document.getElementById("metier").value=q;
 document.getElementById("f").addEventListener("submit",e=>{
   e.preventDefault();
   const em=document.getElementById("email").value.trim();
   const ok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em);
-  document.getElementById("err").hidden=ok;if(!ok)return;
-  // À BRANCHER avant toute pub : outil d'emailing (Beehiiv) + pixel Meta. Sans ça, les emails sont perdus.
-  const w=document.getElementById("wall");
-  document.getElementById("box").innerHTML='<span class="k">✓ C\'EST DÉBLOQUÉ</span><h3>Bonne lecture. Ta première édition arrive demain à 7 h.</h3>';
-  w.prepend(document.getElementById("box"));w.classList.add("open");
-  document.getElementById("suite").removeAttribute("aria-hidden");
+  document.getElementById("err").hidden=ok; if(!ok)return;
+  // À BRANCHER avant toute pub : Beehiiv (abonnement) + pixel Meta. Sans ça, les emails sont perdus.
+  document.getElementById("f").outerHTML='<p style="font-weight:700;font-size:18px">✓ C\'est noté. Ta première édition arrive demain à 7 h.</p>';
 });
 </script>
 </body>
