@@ -34,7 +34,7 @@ a{color:inherit}
 .art{padding-block:22px 6px;display:grid;gap:16px}
 .rub{font-size:12.5px;font-weight:800;letter-spacing:.08em;color:var(--acc)}
 h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:clamp(2.1rem,9.6vw,3rem);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
-.chap{font-size:18.5px;line-height:1.5;color:var(--ink2);font-weight:600}
+.chap{font-size:19px;line-height:1.5;color:var(--ink2);font-weight:600}
 .by{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--mute)}
 .by .dot{width:6px;height:6px;border-radius:50%;background:var(--up)}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -61,7 +61,7 @@ h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:clamp(2.
 .gate .k{font-size:12px;font-weight:800;letter-spacing:.08em;color:#3DDC97}
 .gate h3{font-family:"Source Serif 4",Georgia,serif;font-size:1.45rem;line-height:1.2}
 .gate .perks{display:flex;flex-wrap:wrap;gap:6px}
-.gate .perks span{display:inline-flex;gap:6px;font-size:12.5px;font-weight:700;background:rgba(255,255,255,.1);border-radius:999px;padding:5px 10px}
+.gate .perks i{font-style:normal}.gate .perks span{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;background:rgba(255,255,255,.1);border-radius:999px;padding:5px 10px}
 form{display:grid;gap:10px}
 input[type=email]{width:100%;min-height:56px;border:0;border-radius:12px;padding:0 16px;font:600 17px "Manrope",sans-serif;color:var(--ink);background:#fff}
 .btn{display:grid;place-items:center;width:100%;min-height:56px;border:0;border-radius:12px;background:var(--up);color:#fff;font:800 18px "Manrope",sans-serif;cursor:pointer}
@@ -96,10 +96,6 @@ footer{margin-top:28px;padding-block:20px 34px;border-top:1px solid var(--line);
 </style>
 </head>
 <body>
-<div class="tape" aria-label="Les chiffres de la semaine"><div class="row">
-  <span><i>CAC 40</i> 8 369 <em class="u">▲ 2,8 %</em></span><span><i>S&amp;P 500 · 5/11</i> <em class="d">▼ 4,4 %</em></span><span><i>Taux US 10 ans</i> <em class="d">&gt; 5 %</em></span><span><i>Brent</i> 98 $</span><span><i>Bitcoin</i> ~74 000 $ <em class="d">▼ 41 % vs record</em></span><span><i>Nvidia · résultats</i> mar. 17</span>
-  <span><i>CAC 40</i> 8 369 <em class="u">▲ 2,8 %</em></span><span><i>S&amp;P 500 · 5/11</i> <em class="d">▼ 4,4 %</em></span><span><i>Taux US 10 ans</i> <em class="d">&gt; 5 %</em></span><span><i>Brent</i> 98 $</span><span><i>Bitcoin</i> ~74 000 $ <em class="d">▼ 41 % vs record</em></span><span><i>Nvidia · résultats</i> mar. 17</span>
-</div></div>
 
 <header class="wrap top">
   <div class="logo"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#0B1B2B"/><path d="M9 27l7-7 5 4 10-11" fill="none" stroke="#3DDC97" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 13h6v6" fill="none" stroke="#3DDC97" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Avance <em>Bourse</em></b><small>la Bourse en 3 min, à 7 h</small></div></div>
@@ -108,22 +104,16 @@ footer{margin-top:28px;padding-block:20px 34px;border-top:1px solid var(--line);
 
 <main class="wrap">
   <article class="art">
-    <span class="rub">À LA UNE · INTRODUCTION EN BOURSE</span>
-    <h1>Anthropic, la société derrière Claude, entre en Bourse.</h1>
-    <p class="chap">Le dossier est déposé, le symbole est choisi. Selon la presse, la cotation est visée <strong>dès la semaine prochaine</strong>.</p>
-    <p class="by"><span class="dot"></span>Avance Bourse · 14 nov. 2026 · 3 min</p>
-    <div class="facts"><div><b>ANT</b><span>symbole au Nasdaq</span></div><div><b>26 oct.</b><span>dossier déposé</span></div><div><b>16 nov.</b><span>semaine visée</span></div></div>
-    <p class="oneword"><b>En un mot :</b> l'IA qui fait trembler Wall Street depuis 10 jours va bientôt avoir son propre cours de Bourse.</p>
-    <div class="body">
-      <ul>
-        <li><span>Le <strong>26 octobre</strong>, Anthropic a rendu public son dossier d'entrée en Bourse auprès du gendarme américain des marchés.</span></li>
-        <li><span>Cotation visée au <strong>Nasdaq</strong>, sous le symbole <strong>ANT</strong>.</span></li>
-      </ul>
-    </div>
+    <span class="rub">À LA UNE</span>
+    <h1>Claude entre en Bourse.</h1>
+    <p class="chap">Anthropic, la société derrière l'IA Claude, vise le Nasdaq <strong>dès la semaine prochaine</strong>.</p>
+    <div class="facts"><div><b>ANT</b><span>son symbole</span></div><div><b>16 nov.</b><span>semaine visée</span></div><div><b>Nasdaq</b><span>New York</span></div></div>
 
     <div class="wall" id="wall">
       <div class="body blur" id="suite" aria-hidden="true">
+        <p class="oneword"><b>En un mot :</b> l'IA qui fait trembler Wall Street depuis 10 jours va bientôt avoir son propre cours de Bourse.</p>
         <ul>
+          <li><span>Le <strong>26 octobre</strong>, Anthropic a rendu public son dossier d'entrée en Bourse auprès du gendarme américain des marchés.</span></li>
           <li><span>Selon la presse, les premières cotations sont visées la semaine du 16 novembre.</span></li>
           <li><span>Le contexte est tendu : le 5 novembre, le S&amp;P 500 a chuté de 4,4 %, son pire jour depuis avril 2025. Nvidia a perdu 9,3 % en une séance.</span></li>
           <li><span>Les estimations de valorisation varient énormément d'un média à l'autre : tant que le prix n'est pas fixé, aucun chiffre n'est fiable.</span></li>
@@ -136,7 +126,7 @@ footer{margin-top:28px;padding-block:20px 34px;border-top:1px solid var(--line);
       <div class="gate" id="gate">
         <span class="k">LA SUITE EST RÉSERVÉE AUX LECTEURS</span>
         <h3>Débloque la suite, et reçois la Bourse en 3 minutes chaque matin.</h3>
-        <div class="perks"><span>📈&nbsp;Les chiffres qui comptent</span><span>⏰&nbsp;7 h pile</span><span>🆓&nbsp;Gratuit</span></div>
+        <div class="perks"><span><i aria-hidden="true">📈</i>Les chiffres qui comptent</span><span><i aria-hidden="true">⏰</i>7 h pile</span><span><i aria-hidden="true">🆓</i>Gratuit</span></div>
         <form id="f" novalidate>
           <input id="email" type="email" inputmode="email" autocomplete="email" placeholder="Ton email" aria-label="Ton email" required>
           <p class="err" id="err" role="alert" hidden>Vérifie ton email.</p>
